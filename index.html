@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>Progate</title>
+  </head>
+  <body>
+    <h1 class="title">HTML & CSS の開発環境を用意しよう！</h1>
+    <h2 class="title"> これは勉強の為のコードです。 </h2>
+    <p>自分のPCでWebページを開発する方法を学習しましょう</p>
+    
+    <!--現在時刻表示ここから-->
+    <p class="time">現在の日時は<span id="real-time"></span>です。</p>
+    <script type="text/javascript">
+      function Time(){
+        var RealTime = new Date();
+        var year = RealTime.getFullYear();
+        var month = RealTime.getMonth()+1;
+        var date = RealTime.getDate();
+        var day = RealTime.getDay();
+        var youbi = new Array("日","月","火","水","木","金","土");
+        var hour = RealTime.getHours();
+        var minutes = RealTime.getMinutes();
+        var seconds = RealTime.getSeconds();
+        var text = year + "年" + month + "月" + date + "日" + youbi[day] + "曜日" + hour + ":" + minutes + ":" + seconds;
+        document.getElementById("real-time").innerHTML = text;
+      }
+      setInterval('Time()',1000);
+    </script>
+    <!--現在時刻表示ここまで-->
+   
+    <!--製品1リンクここから-->
+    <h1>製品1の取り扱いについては<a href="C:\Users\takum\OneDrive\Desktop\html_lesson\製品1.html" target="_blank" rel="noopener noopener">ここから</a></h1>
+    <!--製品1リンクここまで-->
+    
+    <!--製品2リンクここから-->
+    <h1>製品2の取り扱いについては<a href="C:\Users\takum\OneDrive\Desktop\html_lesson\製品2.html" target="_blank" rel="noopener noopener">ここから</a></h1>
+    <!--製品2リンクここまで-->
+
+    <!--製品3リンクここから-->
+    <h1>製品3の取り扱いについては<a href="C:\Users\takum\OneDrive\Desktop\html_lesson\製品3.html" target="_blank" rel="noopener noopener">ここから</a></h1>
+    <!--製品3リンクここまで-->
+  </body>
+</html>
